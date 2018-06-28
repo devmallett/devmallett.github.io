@@ -1,0 +1,92 @@
+
+        body {
+            position: relative;
+            background: url("../images/moab-utah.jpg");
+        }
+
+        h1{
+            border-bottom: 5px solid #cccccc;
+            color: #eee;
+        }
+
+        #home {
+            padding-top: 50px;
+            height: auto;
+            color: #fff;
+            /* width: justify; */
+            background-color: #000080;
+            border: 2px solid #cccccc;
+            
+           
+        }
+        form{
+            padding: 0 10px 0 10px;
+        }
+
+        #about {
+            padding-top: 50px;
+            height: auto;
+            color: #fff;
+            background-color: 	#800000;
+            border: 2px solid #cccccc;
+           
+        }
+
+        #portfolio {
+            padding-top: 50px;
+            height: auto;
+            color: #fff;
+            background-color: #000080;
+            border: 2px solid #cccccc;
+           
+        }
+   
+
+        #contact {
+            padding-top: 50px;
+            height: auto;
+            color: #fff;
+            background-color: 	#800000;
+            border: 2px solid #cccccc;
+            
+        }
+
+        #home>img{
+            height: 400px;
+            width: 400px;
+        }
+
+        img {
+            height: 134px;
+            width: 200px;
+            padding: 10px 10px 10px 0;
+         
+            border-width: 1000px; border-color: rgb(160,160,255);
+        }
+
+        #portfolio a {
+            text-decoration: none;
+            text-align: justify;
+            padding: 10px 10px 10px 10px;
+            color: #fff;
+
+        }
+
+        p {
+            font-family: 'Archivo Black', sans-serif;
+            color: #eee;
+            opacity: unset;
+            font-weight: bold;
+            padding: 0 10px 0 10px;
+        }
+        footer{
+            text-align: center;
+        }
+
+        /* #portfolio a:hover {
+            text-decoration: none; 
+            padding: 10px 10px 10px 10px;
+            color: #fff;
+        
+        } */
+    
