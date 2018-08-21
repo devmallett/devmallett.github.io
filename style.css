@@ -6,6 +6,14 @@ h4{
     font-size: 35px;
     color: #ab8987
 }
+label{
+    font-size: 20px;
+}
+#submit{
+    background-color: #f4d68b;
+    border-color: #f4d68b;
+    color: #ab8987;
+}
 #fug{
     color: #f4d68b !important;
     font-size: 35px ;
