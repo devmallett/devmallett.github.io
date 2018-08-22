@@ -1,10 +1,20 @@
 h1{
     border-bottom: 5px solid #cccccc;
     color:#f4d68b;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 h4{
     font-size: 35px;
-    color: #ab8987
+    color: #ab8987;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 label{
     font-size: 20px;
