@@ -37,7 +37,7 @@
     .jumbotron{
         background-color:  rgba(254, 66, 77, .4);
         background-size: cover;
-        min-height: 750px;
+        min-height: 150%;
         /* min-width: 750px;  */
 
     }
