@@ -1,6 +1,6 @@
 h1{
     border-bottom: 5px solid #cccccc;
-    color:#f4d68b;
+    color:#1AA6B7 ;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -9,7 +9,7 @@ h1{
 }
 h4{
     font-size: 35px;
-    color: #ab8987;
+    color: #1AA6B7 ;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -29,8 +29,8 @@ label{
     font-size: 35px ;
 }
 p {
-    font-family: "Avenir";
-    color: #ab8987;
+    font-family: "Roboto";
+    color: #1AA6B7 ;
     opacity: unset;
     font-weight: bold;
     padding: 0 10px 0 10px;
@@ -39,27 +39,27 @@ li {
     list-style-type: none;
 }
 #lit{
-    color: #f4d68b !important;
+    color: #022D41 !important;
     font-size: 24px ;
 }
 #til{
-    color: #ab8987!important;
+    color: #022D41!important;
     font-size: 24px ;
 }
 #tam{
-    color: #ab8987!important;
+    color: #022D41!important;
     font-size: 18px;
 }
 
 #wt{
-    color: #f4d68b;
+    color: #022D41;
 }
 #brn{
-background-color: #ab8987;
+background-color: #DAECF3;
 box-shadow: 0 0 30px black;
 }
 #khk{
-    background-color: #f4d68b;
+    background-color: #FE424D ;
     box-shadow: 0 0 30px black;
 }
 i{
@@ -79,5 +79,7 @@ img{
 }
 form{
     padding: 0 50px 0 50px;
+    width: 25%;
+    position: "fixed";
 }
 

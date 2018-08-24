@@ -1,341 +1,160 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href='style.css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 
-    <html>
-
-
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-        <!-- NAV BAR - SCIENTPAD LOGO HAS TO BE REDONE  -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <!-- <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> -->
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        Scientpad Analytics 
-                    </a>
-                    <!-- <img src="scientpad.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="#home"></a>
-                        </li>
-                        <li>
-                            <a href="#about"></a>
-                        </li>
-                        <li>
-                            <a href="#portfolio"></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href='#contact'></a>
-                        </li>
-                    </ul>
+  <meta charset="UTF-8">
+  <title>Scientpad Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href='css/styleWorking.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/navbar-fixed-side.css" rel="stylesheet" />
 
 
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="body">
+  
+
+  <span class="position-absolute trigger"><!-- hidden trigger to apply 'stuck' styles --></span>
+  <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-info py-2">
+    <a id="letter" class="navbar-brand" href="#"><p>Scientpad Analytics</p></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>  
+  </nav>
+  <br><br>
+  <!-- Banner - container  fluid -   -->
+  <div class="container-fluid">
+
+    <!-- Jumbotron with Title -->
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-lg-6 verticalLine">
+          <div class="row"></div>
+          <div class="row">
+            <!-- Some text will go here  -->
+            <div class="col-lg-12">
+              <h2 id="howdy" class="text-center">
+                <div>Reach your customers with plug and play.</div>
+                  </h2>
+      
                 </div>
-        </nav>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <!-- Overall Bootstrap Grid -->
-        <div class="container">
-
-            <!-- Jumbotron with Title -->
-            <div class="jumbotron">
-                <h2 class="text-center">
-                    <strong>SCIENTPAD IS PLUG AND PLAY AI</strong>
-                </h2>
-                <hr>
-                <p class="lead text-center">Bringing artificial intelligence and machine learning tactics to business partners</p>
-
-            </div>
+          </div>
+          <div class="row "></div>
         </div>
-        <div class="container-fluid full-width">
-            <!-- ROW ONE PLUG IN OUR STORY  -->
-            <div class="row row-no-gutter" id="brn">
-
-                <div class="col-lg-12">
-
-                    <!-- Controls (Superpower Grow/Shrink)-->
-                    <div id="story " class="card">
-                        <h4 class="card-header  text-center" id="fug">Our story.</h4>
-                        <div class="card-body">
-                            <div class="text-center">
-                                <p id="lit">Scientpad Analytics is a plug and play AI/ML driven marketing data science platform which
-                                    automatically derives the known unknown and unknown insights of online users and helps
-                                    marketers to reach out to their customers in a very micro-segmented way.</p>
-                            </div>
-                            <hr>
-
-                        </div>
-                    </div>
+        <hr>
+        <br>
+        <div class="col-lg-6 ">
+          <!-- a form box will go here  -->
+          <h3 class="text-center">Learn more.</h3>
+          <form id='content-me'>
+            <div class="form-group panel-resizeable border border-top-0 ">
+              <input type="text " class="form-control " id="name-input "placeholder="+ name">
+              <hr>
+              <div class="form-group ">
+                <input type="text " class="form-control " id="email-input " placeholder="+ email">
+              </div>
+              <hr>
+              <div class="form-group ">
+                <input type="text " class="form-control " vaule="company " placeholder="+ company">
+              </div>
+              <hr>
+              <div class="form-group ">
+                <div class="row">
+                    <input type="radio" name="gender" value="male" checked> Product<br>
+                    <input type="radio" name="gender" value="female"> Services<br>
                 </div>
+              </div>
+              <button type="submit " class="btn btn-primary " id="submit ">Submit</button>
             </div>
-
+          </form>
         </div>
-        <br>
-        <br>
-        <div class="container-fluid full-width">
-            <!-- ROW TWO THREE LAYERS  -->
-            <h4 class="card-header  text-center">Three layers.</h4>
-            <div class="row row-no-gutter">
-                <div class='col-lg-4'>
-                    <div id="" class="card">
-                        <div class="card-body" id="khk">
-                            <div class="text-center">
-                                <!-- <i class="fa fa-audio-description" style="font-size:48px;color:red"></i> -->
-                                <img src="connectdevelop-brands.svg">
-                                <p>
-                                    <emphasize>Scientpad I/O </emphasize> allows to connect various data sources for ML/AI layer and
-                                    sends the data insights to various marketing engagement platforms for personalization</p>
-                                <hr>
+      </div>
+
+     
 
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='col-lg-4'>
-                    <div id="" class="card">
+    </div>
+  </div> 
 
-                        <div class="card-body" id="khk">
-                            <div class="text-center">
-                                <img src="search-plus-solid.svg">
-                                <p>
+  <div  id="yo" class="container-fluid">
+    <p id="p" class="text-center">
+        Scientpad Analytics is a one-click AI/ML driven marketing data science platform which allows marketers to apply machine learning algorithms with scale. Automate marketing analytics use cases through AI, improving the accuracy and the  execution of marketing strategies.
+    </p>
+  </div>
+  
 
-                                    <emphasize>Scientpad ML layer</emphasize> analyzes all possible data points with an objective to
-                                    maximize the business goal and generates the actionable insights</p>
-
-                                <hr>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='col-lg-4'>
-                    <div id="" class="card">
-                        <div class="card-body" id="khk">
-                            <div class="text-center">
-                                <img src="cogs-solid.svg">
-                                <p>
-                                    <emphasize>Scientpad AI layer</emphasize> automates the whole process and improves the insights
-                                    through feedback loops (using reinforcement learnings)</p>
-                                <p style="color:#f4d68b">fsnakonaefmokadmnfmkiadnfndak</p>
-                                <hr>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <div class="container-fluid full-width">
-                    <h4 class="card-header text-center">How it works.</h4>
-                    <p class="card-header text-center">We are the team of marketing data scientists and data engineers, actively building industry solutions
-                        around following areas of research</p>
-                    <!-- ROW FOUR HOW IT WORKS  -->
-                    <div class="row row-no-gutter" id="brn">
-                        <div class='col-lg-6'>
-                            <div id="" class="card">
-
-                                <div class="card-body">
-
-                                    <div class="text-center">
-                                        <ul>
-                                            <li>
-                                                <p id="lit"> Anomaly Detection</p>
-                                            </li>
-                                            <li>
-                                                <p id="lit"> Alerting Systems</p>
-                                            </li>
-                                            <li>
-                                                <p id="lit"> Attribution Modeling</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class='col-lg-6'>
-                            <div id="" class="card">
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <ul>
-                                            <li>
-                                                <p id="lit">Algorithmic A/B Testing</p>
-                                            </li>
-                                            <li>
-                                                <p id="lit">Predictive Segmentation</p>
-                                            </li>
-                                            <li>
-                                                <p id="lit">Consumer Behavior Models</p>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <div class="container-fluid full-width">
-                    <h4 class="card-header text-center">We're commmitted to quality</h4>
-                    <p class="card-header text-center">We do provide Analytics and Data Science/AI consulting within all kind of tech domain</p>
-                    <!-- ROW FIVE WERE COMMITTED TO QUALITY -->
-                    <div class="row row-no-gutter" id="khk">
-                        <div class='col-lg-4'>
-                            <div id="" class="card">
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <p id="til">
-                                            Enterprise Level Platforms
-                                            <ul>
-                                                <li class="text-justify" id="tam"> Adobe Analytics</li>
-                                                <li class="text-justify" id="tam">Google Analytics</li>
-                                                <li class="text-justify" id="tam">Mixpanel</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-lg-4'>
-                            <div id="" class="card">
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <p id="til">
-                                            Open Source Platform
-                                            <ul>
-                                                <li class="text-justify" id="tam"> Snowplow Analytics </li>
-                                                <li class="text-justify" id="tam">Piwik</li>
-                                                <li class="text-justify" id="wt">Something</li>
-
-                                            </ul>
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-lg-4'>
-                            <div id="" class="card">
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <p id="til">
-                                            Data lake pipline
-                                            <ul>
-                                                <li class="text-justify" id="tam"> Amazon Web Services </li>
-                                                <li class="text-justify" id="tam">Google Cloud Platform</li>
-                                                <li class="text-justify" id="wt">Somethign</li>
-
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <br>
-                        <br>
-                        <p class="card-footer text-center" id="wt">Advanced Analytics and Automation through Machine Learning and Artifical Intelligence</p>
-                        <p class="card-footer text-center"> Business Insights and Analytics for Product and Marketing Team</p>
-
-                    </div>
-                    <br>
-                    <br>
-
-                    <!-- ROW SIX WANT TO LEARN MORE?  -->
-                    <div class="row row-no-gutter" id="brn">
-                        <div id="" class="card">
-                            <h4 class="card-header  text-center" style="color: #f4d68b ">Want to learn more?</h4>
-                            <div class="card-body">
-                                <div class="text-left">
-                                    <div class='row' id='contact'>
-                                        <form id='content-me'>
-                                            <div class="form-group  panel-resizeable border border-top-0 ">
-                                                <label for="name-input" style="color: #f4d68b ">Name:</label>
-                                                <input type="text" class="form-control" id="name-input">
-                                                <hr>
-                                                <div class="form-group">
-                                                    <label for="email-input" style="color: #f4d68b ">Email:</label>
-                                                    <input type="text" class="form-control" id="email-input">
-                                                </div>
-                                                <hr>
-                                                <div class="form-group">
-                                                    <label for="message-input" style="color: #f4d68b ">Message:</label>
-                                                    <textarea class="form-control" cols="40" id="message-input" name="message" rows="10"></textarea>
-                                                    <br>
-                                                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-
-                </div>
-            </div>
-    </body>
+<div  id="margin" class="container-fluid">
+  <div id ="yo row "class="row">
+    <div class="col-lg-3 col-centered">
+      <div class="col-lg-4 col-lg-offset-1"><img src="images/other/connectdevelop-brands.svg"></div>
+      <br>
+      <div class=" col-lg-4 col-lg-offset-1"><h1>CONNECT</h1></div>
+      <br>
+      <div class="col-lg-4 col-lg-offset-1">
+        <h4 class="text-justify">Send data insights to marketing platforms</h4>
+    </div>
+    </div>
+    <div class="col-lg-3 col-centered">
+      <div class="col-lg-4 col-lg-offset-1"><img src="images/other/connectdevelop-brands.svg"></div>
+      <br>
+      <div class="col-lg-4 col-lg-offset-1"><h1>ANALYZE</h1></div>
+      <br>
+      <div class="col-lg-4 col-lg-offset-1"> <h4 class="text-justify">Analyze data with business in mind</h4>
+        </div>
+    </div>
+    <div class="col-lg-3 col-centered">
+      <div class="col-lg-4 col-lg-offset-1"><img src="images/other/connectdevelop-brands.svg"></div>
+      <br>
+      <div class="col-lg-4 col-lg-offset-1"><h1 class="text-center">AUTOMATE</h1></div>
+      <br>
+      <div class="col-lg-4 col-lg-offset-1"><h4 class="text-justify">Improve insights through feedback loops</h4>
+      </div></div>
+    <div class="col-lg-3 col-centered">
+      <div class="col-lg-4 col-lg-offset-1"><img src="images/other/connectdevelop-brands.svg"></div>
+      <br>
+      <div class="col-lg-4 col-lg-offset-1"><h1>FEATURES</h1></div>
+      <br>
+      <div class="col-lg-4 col-lg-offset-1"><h4 class="text-justify">Anomaly detection, consumer behavior models<strong> + more </strong></h4></div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div id ="footer" class="card w-100">
+  <div class="card-body">
+    <h5 class="card-title text-center">© Copyright 2018, Scientpad Analytics LLC - All Rights Reserved</h5>
+  </div>
+</div>
+  
 
 
-    </html>
 
-<!-- 
-    This is the carosel.. wait until last to try to get this working 
+  <!-- OG About summary  -->
 
-             <div class="container">
-                            <div class="row">
-                    
-                                <div class="span12 well">
-                                    <div id="mycarousel" class="carousel slide span8">
-                                        <div class="carousel-inner">
-                                            <div class="item active">
-                                            <h1>SOMETHING BIG GOES HERE </h1>
-                                            </div>
-                                            <div class="item">
-                                                    <h1>SOMETHING BIG GOES HERE </h1>
-                                            </div>
-                                            <div class="item">
-                                                    <h1>SOMETHING BIG GOES HERE </h1>  
-                                            </div>
-                                            <div class="item">
-                                                    <h1>SOMETHING BIG GOES HERE </h1>
-                                            </div>
-                                            <div class="item">
-                                                    <h1>SOMETHING BIG GOES HERE </h1>
-                                            </div>
-                                        </div>
-                                        <a class="carousel-control left" href="#mycarousel" data-slide="prev">&lsaquo;</a>
-                                        <a class="carousel-control right" href="#mycarousel" data-slide="next">&rsaquo;</a>
-                    
-                                    </div>
-                                </div>
-                    
-                            </div>
-                        </div>
- -->
+  <!-- Footer will go here  -->
+
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js "></script>
+
+
+</body>
