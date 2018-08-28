@@ -1,0 +1,100 @@
+
+/* Body */
+body{
+    /* background-color: #121d40; */
+    /* background-color: #83b2d1; */
+    background-color: #d3d3d3;
+    /* lightgrey; */
+
+}
+.jumbotron{
+
+    /* background: url("../images/contact/moab-utah.jpg"); */
+   /* height: 150%; */
+   /* min-height: 750px; */
+   /* opacity: .3; */
+    background-repeat: no-repeat;
+    /* width: 125%; */
+    /* box-shadow: 5px 10px; */
+
+}
+.jumbotron.content{
+    position: absolute;
+z-index:999;
+text-align: center;
+width: 100%;
+}
+.jumbotron::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index:99;
+    background-image: url("../images/contact/moab-utah.jpg");
+    background-size: cover;
+    opacity: 0.4;
+}
+.jumbotron>img{
+
+    /* background: url("../images/contact/jumbo2.png");
+    background-repeat: no-repeat; */
+    width: 500%;
+
+}
+/* ######################################### */
+/* Programming Languages */
+
+    h1,h2,h3,h4,p{
+        color:#121d40;; 
+        /* #121d40; */
+        font-family: 'Metamorphous', cursive;
+        text-align: center;
+        /* color: white; */
+    
+    }
+
+
+
+    /* Languages##################################### */
+    .modal-body>img {
+        width: 95%;
+        /* margin-left: 10px;
+        margin-right: 10px; */
+        margin: 10px 10px 10px 10px;
+    }
+
+    #img {
+        width: 50%;
+    /*     
+            color: #fff;
+            text-shadow: 1px 1px 1px #ccc;
+            font-size: 1.5em; */
+
+    }
+    /* #elementID {
+        color: red;
+        text-shadow: 1px 1px 1px #ccc;
+        font-size: 1.5em;
+    } */
+    /* #button { */
+        /* background-color: white; */
+    /* } */
+    #img{
+        width: 30px;
+        /* margin-left: -50px; */
+    }
+    #work{
+        width: 75%;
+        /* margin-left: -50px; */
+    }
+    #words{
+
+        width: 30%;
+    }
+/* ###################################################### */
+
+/* #modal-content{
+    margin: -100px -100px -100px -100px;
+} */

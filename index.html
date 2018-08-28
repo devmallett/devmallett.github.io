@@ -1,160 +1,501 @@
 <!DOCTYPE html>
 
-<html lang="en-us">
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href='style/style.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/navbar-fixed-side.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
 
-  <meta charset="UTF-8">
-  <title>Scientpad Analytics</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-    crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href='css/style.css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/navbar-fixed-side.css" rel="stylesheet" />
+    <html>
 
 
-</head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<body data-spy="scroll" data-target=".navbar" data-offset="100" id="body">
-  
-  
-  <span class="position-absolute trigger"><!-- hidden trigger to apply 'stuck' styles --></span>
-  <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-info py-2">
-    <a id="letter" class="navbar-brand" href="#"><p><strong>Scientpad Analytics</strong></p></a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-    </div>  
-  </nav>
-  <br><br>
-  <!-- Banner - container  fluid -   -->
-  <div class="container-fluid">
+        <!-- NAV BAR - SCIENTPAD LOGO HAS TO BE REDONE  -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <!-- <span class="icon-bar">
+                            
 
-    <!-- Jumbotron with Title -->
-    <div class="jumbotron">
-      <div class="row">
-        <div class="col-lg-6 verticalLine">
-          <div class="row"></div>
-          <div class="row">
-            <!-- Some text will go here  -->
-            <div class="col-lg-12">
-              <h2 id="howdy" class="text-center">
-                <div>Reach customers with plug and play.</div>
-                  </h2>
-      
+                        </span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> -->
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        Like the hammer
+                    </a>
+                    <!-- <img src="scientpad.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+
+                    <!-- <ul class="nav navbar-nav icon-bar">
+                        <li>
+                            <a href="#home">yo</a>
+                        </li>
+                        <li>
+                            <a href="#about">hey</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio"></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href='#contact'></a>
+                        </li>
+                    </ul> -->
+
+
                 </div>
-          </div>
-          <div class="row "></div>
+        </nav>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Overall Bootstrap Grid -->
+        <div class="container-fluid">
+            <!-- Jumbotron with Title -->
+            <div class="jumbotron">
+                <h2 class="text-center">
+                    <strong>Dev the Dev</strong>
+                </h2>
+                <hr>
+                <p class="lead text-center">the more i learn, the less i know</p>
+                <br>
+                <br>
+                <p>Welcome to my page!</p>
+                <p>My name is Dev Mallett and I am a software developer. I currently live in
+                    Cleveland, OH.</p>
+                <p>I have an undergrad degree in Mechanical Engineering from University of Dayton. </p>
+                <p>I aided in a number of projects/initiatives across campus, ranging
+                    from social activism to prospective student outreach.</p>
+               
+            </div>
+        </div>
+        <div class="container-fluid full-width">
+            <h2>Programming Languages</h2>
+            <div id="familiar" class="row">
+                <h3>Familiar</h3>
+                <div class="col-lg-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>CSS3</h3>
+                        </div>
+                        <div class="col-sm-6"><img id="img" src="images/words/fire-solid.svg"></div>
+                    </div>
+                    <!-- <div class="col-sm-6"> </div> -->
+
+                </div>
+                <div class="col-lg-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>HTML5</h3>
+                        </div>
+                        <div class="col-sm-6"><img id="img" src="images/words/fire-solid.svg"><img id="img" src="images/words/fire-solid.svg"></div>
+                    </div>
+
+                </div>
+                <div class="col-lg-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>Java</h3>
+                        </div>
+                        <div class="col-sm-6"><img id="img" src="images/words/fire-solid.svg"></div>
+                    </div>
+
+                </div>
+                <div class="col-lg-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>Javascript</h3>
+                        </div>
+                        <div class="col-sm-6"><img id="img" src="images/words/fire-solid.svg"><img id="img" src="images/words/fire-solid.svg"></div>
+                    </div>
+
+                </div>
+                <div class="col-lg-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>MATLAB</h3>
+                        </div>
+                        <div class="col-sm-6"><img id="img" src="images/words/fire-solid.svg"><img id="img" src="images/words/fire-solid.svg"></div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>SQL</h3>
+                        </div>
+                        <div class="col-sm-6"><img id="img" src="images/words/fire-solid.svg"><img id="img" src="images/words/fire-solid.svg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Working</h3>
+                <div class="row">
+                    <div class="col-sm-6"><h3>Python</h3></div>
+                    <div class="col-sm-6"><img id="img" src="images/words/fire-solid.svg"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6"><h3>Swift</h3></div>
+                    <div class="col-sm-6"><img id="img" src="images/words/fire-solid.svg"></div>
+                </div>
+            </div>
+
         </div>
         <hr>
         <br>
-        <div class="col-lg-6 ">
-          <!-- a form box will go here  -->
-          <h3 class="text-center">Learn more.</h3>
-          <form id='content-me'>
-            <div class="form-group panel-resizeable border border-top-0 ">
-              <input type="text " class="form-control " id="name-input "placeholder="+ name">
-              <hr>
-              <div class="form-group ">
-                <input type="text " class="form-control " id="email-input " placeholder="+ email">
-              </div>
-              <hr>
-              <div class="form-group ">
-                <input type="text " class="form-control " vaule="company " placeholder="+ company">
-              </div>
-              <hr>
-              <div class="form-group ">
-                <div class="row">
-                    <input type="radio" name="gender" value="male" checked> Product<br>
-                    <input type="radio" name="gender" value="female"> Services<br>
-                </div>
-              </div>
-              <button type="submit " class="btn btn-primary " id="submit ">Submit</button>
+        <br>
+        <div class="container-fluid full-width">
+            <!-- ROW TWO THREE LAYERS  -->
+            <h2>Frameworks | Libraries </h2>
+            <div class="row">
+                <div class=col-lg-4>
+                    <h3>jQuery</h3><img id="img" src="images/words/fire-solid.svg"></div>
+
+                <div class=col-lg-4>
+                    <h3>Bootstrap</h3><img id="img" src="images/words/fire-solid.svg"><img id="img" src="images/words/fire-solid.svg"></div>
+                <div class=col-lg-4>
+                    <h3>Node.js</h3><img id="img" src="images/words/fire-solid.svg"><img id="img" src="images/words/fire-solid.svg"></div>
             </div>
-          </form>
+
         </div>
-      </div>
-
-     
 
 
-    </div>
-  </div> 
+        <br>
+        <br>
+        <div class="container-fluid full-width">
+            <h2>Software </h2>
+            <div class="row">
+                <div class=col-lg-4>
+                    <h3>Minitab 17</h3><img id="img" src="images/words/fire-solid.svg">
+                </div>
+                <div class=col-lg-4>
+                    <h3>SolidWorks</h3><img id="img" src="images/words/fire-solid.svg"><img id="img" src="images/words/fire-solid.svg">
+                </div>
+            </div>
 
-  <div  id="yo" class="container-fluid">
-    <p id="p" class="text-center">
-        Scientpad Analytics is a one-click AI/ML driven marketing data science platform which allows marketers to apply machine learning algorithms with scale. Automate marketing analytics use cases through AI, improving the accuracy and the  execution of marketing strategies.
-    </p>
-  </div>
-  
-
-<div  id="margin" class="container-fluid">
-  <div id ="yo row "class="row">
-    <div class="col-lg-3 col-centered">
-      <div class="col-lg-4 col-lg-offset-1"><img src="images/other/connectdevelop-brands.svg"></div>
-      <br>
-      <div class=" col-lg-4 col-lg-offset-1"><h1>CONNECT</h1></div>
-      <br>
-      <div class="col-lg-4 col-lg-offset-1">
-        <h4 class="text-justify">Send data insights to marketing platforms</h4>
-    </div>
-    </div>
-    <div class="col-lg-3 col-centered">
-      <div class="col-lg-4 col-lg-offset-1"><img src="images/other/connectdevelop-brands.svg"></div>
-      <br>
-      <div class="col-lg-4 col-lg-offset-1"><h1 class="text-center">ANALYZE</h1></div>
-      <br>
-      <div class="col-lg-4 col-lg-offset-1"> <h4 class="text-justify">Analyze data with business in mind</h4>
         </div>
-    </div>
-    <div class="col-lg-3 col-centered">
-      <div class="col-lg-4 col-lg-offset-1"><img src="images/other/connectdevelop-brands.svg"></div>
-      <br>
-      <div class="col-lg-4 col-lg-offset-1"><h1 class="text-center">AUTOMATE</h1></div>
-      <br>
-      <div class="col-lg-4 col-lg-offset-1"><h4 class="text-justify">Improve insights through feedback loops</h4>
-      </div></div>
-    <div class="col-lg-3 col-centered">
-      <div class="col-lg-4 col-lg-offset-1"><img src="images/other/connectdevelop-brands.svg"></div>
-      <br>
-      <div class="col-lg-4 col-lg-offset-1"><h1 class="text-center">FEATURES</h1></div>
-      <br>
-      <div class="col-lg-4 col-lg-offset-1"><h4 class="text-justify">Anomaly detection, consumer behavior models<strong> + more </strong></h4></div>
-    </div>
-  </div>
-</div>
-<br>
-<br>
-<br>
-<div id ="footer" class="card w-100">
-  <div class="card-body">
-    <h5 class="card-title text-center">© Copyright 2018, Scientpad Analytics LLC - All Rights Reserved</h5>
-  </div>
-</div>
-  
+        <br>
+        <hr>
+        <br>
+        <div class="container-fluid full-width">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row text-center"><img id="words" src="images/words/cookie-bite-solid.svg"></div>
+                    <div class="row text-center"><h2>Hungry</h2></div>
+                    <div class="row text-center"><h3>Eager to build on my dev skills with new and exciting challenges</h3></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row text-center"><img id="words" src="images/words/tasks-solid.svg"></div>
+                    <div class="row text-center"><h2>Detial</h2></div>
+                    <div class="row text-center"> <h3>Adding comments brings joy to my face</h3></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row text-center"><img id="words" src="images/words/comment-solid.svg"></div>
+                <div class="row text-center"><h2>Communication</h2></div>
+                <div class="row"> <h3>Spoke to 15k people once, no biggie</h3></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row text-center"><img id="words" src="images/words/researchgate-brands.svg"></div>
+                <div class="row text-center"><h2>Researcher</h2></div>
+                <div class="row text-center"> <h3>New stacks are only unfamiliar for so long</h3></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row text-center"><img id="words" src="images/words/plane-departure-solid.svg"></div>
+                <div class="row text-center"><h2>Daring</h2></div>
+                <div class="row text-center"> <h3>Willing to take the leap...only if i know the hypotenuse </h3></div>
+                </div>
+               
+            </div>
+         
+
+        </div>
+        <br>
+        <br>
+
+        <!-- ROW SIX WANT TO LEARN MORE?  -->
+        <div class="container-fluid full-width">
+                <h2>WORK</h2>
+                <div id="about" class="row">
+                    <p>Here are some of my deployed projects.</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <h2>Animal Track</h2>
+                            <img id="work" src="images/work/animal-gif-pic.png">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                view
+                            </button>
+                            <!-- The Modal -->
+                            <div class="container">
+                                <div class="modal fade" id="myModal">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div id="modal-content" class="modal-content">
+                                            <div class="row">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title text-center">Animal Track</h4>
+                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body container-fluid">
+                                                    <br>
+                                                    <img src="images/work/animal-gif-pic.png">
+                                                    <br>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <p><strong>Description: </strong>Simple app used to query gify api. User
+                                                        inputs something that they would like to search. Input becomes button.
+                                                        On click button returns giphs
+                                                    </p>
+                                                    <p><strong>Tools: </strong>CSS | HTML | jQuery | Giphy API</p>
+                                                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <h2>Deblase</h2>
+                            <img id="work" src="images/work/deblase.png">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                                view
+                            </button>
+                            <!-- The Modal -->
+                            <div class="container">
+                                <div class="modal fade" id="myModal2">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div id="modal-content" class="modal-content">
+                                            <div class="row">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title text-center">Deblase</h4>
+                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body container-fluid">
+                                                    <br>
+                                                    <img src="images/work/deblase.png">
+                                                    <br>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <p><Strong>My Role: </strong> Backend </p>
+                                                    <p><strong>Description: </strong>App created for boring days in mind. User selects from a list of options selecting an activity + mood they are in.
+                                                        App returns data based on activity and mood, and will query user suggestions if no data is returned.</p>
+                                                    <p><strong>Tools: </strong> HTML/CSS | Sass | Handlebars |Node.js | mySql | Sequelize </p>
+                                                    <p>
+                                                            <strong>APIs: </strong> Last fm | utelly | edamam | giphy
+                                                            </p>
+                                                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <h2>Focate</h2>
+                            <img id="work" src="images/work/food-desert-pic.png">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+                                view
+                            </button>
+                            <!-- The Modal -->
+                            <div class="container">
+                                <div class="modal fade" id="myModal3">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div id="modal-content" class="modal-content">
+                                            <div class="row">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title text-center">Focate</h4>
+                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body container-fluid">
+                                                    <br>
+                                                    <img src="images/work/food-desert-pic.png">
+                                                    <br>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <p><strong>My Role: </strong> Backend</p>
+                                                    <p><strong>Description: </strong>Users can input a location and see all grocery stores and supermarkets in the area on a map and in a list.
+                                                        Users can change the distance between walking and biking and the radius around the grocery stores will change. </p>
+                                                    <p><strong>Tools: </strong> HTML | CSS | CSS Grid | Bootsrtap | Firebase</p>
+
+                                                        <p><strong>APIs: </strong> google places | google maps | math.js    
+                                                        </p>
+                                                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <h2>Train Station</h2>
+                            <img id="work" src="images/work/save-train-pic.png">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+                                view
+                            </button>
+                            <!-- The Modal -->
+                            <div class="container">
+                                <div class="modal fade" id="myModal4">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div id="modal-content" class="modal-content">
+                                            <div class="row">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title text-center">Animal Track</h4>
+                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body container-fluid">
+                                                    <br>
+                                                    <img src="images/work/save-train-pic.png">
+                                                    <br>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <p><strong> My Role: </strong> Full-stack</p>
+                                                    <p><strong>Description: </strong>Train logger to calculate hours between train rides.</p>
+                                                    <p><strong>Tools: </strong>Bootstrap | Javascript </p>
+                                                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <h2>Scientpad</h2>
+                            <img id="work" src="images/work/scientpad.png">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+                                view
+                            </button>
+                            <!-- The Modal -->
+                            <div class="container">
+                                <div class="modal fade" id="myModal5">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div id="modal-content" class="modal-content">
+                                            <div class="row">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title text-center">Scientpad Analytics</h4>
+                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body container-fluid">
+                                                    <br>
+                                                    <img src="images/work/scientpad.png">
+                                                    <br>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                        <p><strong> My Role: </strong> Frontend</p>
+                                                    <p><strong>Description: </strong>Landing page for data analytics company</p>
+                                                    <p><strong>Tools: </strong>Bootstrap </p>
+                                                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row row-no-gutter" id="brn">
+            <div id="" class="card">
+                <h4 class="card-header  text-center">Want to learn more?</h4>
+
+            </div>
+        </div>
+        <br>
+
+        </div>
+        </div>
+        <div class='row text-center'>
+            <a href='https://github.com/devmallett'>
+                <i class='fa fa-github fa-4x'></i>
+            </a>
+            <a href='https://www.linkedin.com/in/devinmallett/'>
+                <i class='fa fa-linkedin fa-4x'></i>
+            </a>
+
+            <a href='https://twitter.com/devmallett'>
+                <i class='fa fa-twitter fa-4x'></i>
+            </a>
+
+          
+
+            
+        </div>
+
+        <div id ="footer" class="card w-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">This page was made with care and coffee. © Copyright 2018, Like the Hammer LLC - All Rights Reserved</h5>
+            </div>
+          </div>
 
 
 
-  <!-- OG About summary  -->
-
-  <!-- Footer will go here  -->
 
 
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery.js "></script>
+    </body>
 
 
-</body>
+    </html>
